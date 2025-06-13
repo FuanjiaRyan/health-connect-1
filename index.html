@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Connect - Your Online Healthcare Solution</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Health<span>Connect</span></a>
+            <div class="nav-toggle" id="navToggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#doctors">Doctors</a></li>
+                <li><a href="#consult">Consult</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" class="btn-login" id="loginBtn">Login</a></li>
+                <li><a href="#" class="btn-register" id="registerBtn">Register</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Your Health Is Our Priority</h1>
+                <p>Connect with top medical specialists from the comfort of your home. Get prescriptions, medical advice, and health tips instantly.</p>
+                <a href="#consult" class="btn-primary">Consult Now</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Doctor and patient">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-user-md"></i>
+                    <h3>Online Consultation</h3>
+                    <p>Consult with certified doctors via video, voice or chat from anywhere.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-prescription-bottle-alt"></i>
+                    <h3>E-Prescription</h3>
+                    <p>Get digital prescriptions that you can use at any pharmacy.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-calendar-check"></i>
+                    <h3>Appointment Booking</h3>
+                    <p>Book appointments with specialists at your convenience.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-heartbeat"></i>
+                    <h3>Health Records</h3>
+                    <p>Maintain your medical history securely in one place.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctors Section -->
+    <section class="doctors" id="doctors">
+        <div class="container">
+            <h2 class="section-title">Our Specialist Doctors</h2>
+            <div class="doctors-grid">
+                <div class="doctor-card">
+                    <img src="marginelle.jpg" alt="Dr. Sarah Johnson">
+                    <h3>Dr. Marginelle Folazong</h3>
+                    <p>Cardiologist</p>
+                    <div class="doctor-contact">
+                        <p><i class="fas fa-phone"></i>+237 670219192</p>
+                        <p><i class="fas fa-envelope"></i> marginellefolazong@gmail.com</p>
+                    </div>
+                </div>
+                <div class="doctor-card">
+                    <img src="lino.jpg" alt="Dr. Michael Chen">
+                    <h3>Dr. Fah Hosea</h3>
+                    <p>Neurologist</p>
+                    <div class="doctor-contact">
+                        <p><i class="fas fa-phone"></i> +237 673113125</p>
+                        <p><i class="fas fa-envelope"></i> fahakam645@gmail.com</p>
+                    </div>
+                </div>
+                <div class="doctor-card">
+                    <img src="collins.jpg" alt="Dr. Priya Patel">
+                    <h3>Dr. Kedze Corlins</h3>
+                    <p>Pediatrician</p>
+                    <div class="doctor-contact">
+                        <p><i class="fas fa-phone"></i> +237 676614820</p>
+                        <p><i class="fas fa-envelope"></i> corlinskedze@gmail.com</p>
+                    </div>
+                </div>
+                <div class="doctor-card">
+                    <img src="puzo.jpg" alt="Dr. Robert Williams">
+                    <h3>Dr. Fuanjia Ryan</h3>
+                    <p>Dermatologist</p>
+                    <div class="doctor-contact">
+                        <p><i class="fas fa-phone"></i> +237 679751591</p>
+                        <p><i class="fas fa-envelope"></i> fuanjiaakemfua@gmail.com</p>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- Consultation Section -->
+    <section class="consult" id="consult">
+        <div class="container">
+            <div class="consult-image">
+                <img src="afayi1.jpg" alt="Online consultation">
+                <img src="afayi2.jpg" alt="Online consultation">
+            </div>
+            <div class="consult-form">
+                <h2 class="section-title">Consult with a Doctor</h2>
+                <form id="consultationForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="specialty">Specialty Needed</label>
+                        <select id="specialty" name="specialty" required>
+                            <option value="">Select a specialty</option>
+                            <option value="cardiology">Cardiology</option>
+                            <option value="neurology">Neurology</option>
+                            <option value="pediatrics">Pediatrics</option>
+                            <option value="dermatology">Dermatology</option>
+                            <option value="general">General Physician</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="symptoms">Describe Your Symptoms</label>
+                        <textarea id="symptoms" name="symptoms" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Request Consultation</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Regional Hospital, Buea Cameroon</p>
+                    <p><i class="fas fa-phone"></i> +237 679751591</p>
+                    <p><i class="fas fa-envelope"></i> info@healthconnect.com</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="contact-name">Name</label>
+                            <input type="text" id="contact-name" name="contact-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Email</label>
+                            <input type="email" id="contact-email" name="contact-email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-subject">Subject</label>
+                            <input type="text" id="contact-subject" name="contact-subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Message</label>
+                            <textarea id="contact-message" name="contact-message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>About HealthConnect</h3>
+                    <p>Welcome to Health Connect
+
+Health Connect is a revolutionary telemedicine platform designed to bridge the gap between healthcare providers and patients. Our mission is to make quality healthcare accessible, convenient, and affordable for everyone.
+
+Our Vision
+
+We envision a future where healthcare is no longer limited by geographical boundaries or time constraints. With Health Connect, patients can consult with experienced doctors from the comfort of their own homes, reducing wait times and increasing access to medical care.
+
+Our Features
+
+- Secure and Private Consultations: Our platform ensures that all interactions between patients and doctors are secure, private, and confidential.
+- Experienced Healthcare Providers: Our network of doctors is comprised of experienced professionals who are dedicated to providing high-quality care.
+- Convenient Scheduling: Patients can schedule appointments at their convenience, eliminating the need for lengthy wait times or missed appointments.
+- Personalized Care: Our platform allows doctors to provide personalized care and attention to each patient, ensuring that their unique needs are met.
+
+Our Goal
+
+At Health Connect, our goal is to improve healthcare outcomes by increasing access to medical care, reducing healthcare disparities, and enhancing the overall patient experience. We believe that everyone deserves quality healthcare, regardless of their location or circumstances.
+
+Join the Health Connect Community
+
+Whether you're a patient seeking medical care or a healthcare provider looking to expand your reach, we invite you to join the Health Connect community. Together, we can revolutionize the way healthcare is delivered and make a positive impact on the lives of individuals around the world.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#doctors">Doctors</a></li>
+                        <li><a href="#consult">Consult</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-subscribe">
+                    <h3>Subscribe to Newsletter</h3>
+                    <form id="newsletterForm">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit" class="btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 HealthConnect. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Registration Modal -->
+    <div class="modal" id="registrationModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Create Your Account</h2>
+            <form id="registrationForm">
+                <div class="form-group">
+                    <label for="reg-name">Full Name</label>
+                    <input type="text" id="reg-name" name="reg-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-email">Email</label>
+                    <input type="email" id="reg-email" name="reg-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-phone">Phone Number</label>
+                    <input type="tel" id="reg-phone" name="reg-phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-password">Password</label>
+                    <input type="password" id="reg-password" name="reg-password" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-confirm-password">Confirm Password</label>
+                    <input type="password" id="reg-confirm-password" name="reg-confirm-password" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-role">I am a:</label>
+                    <select id="reg-role" name="reg-role" required>
+                        <option value="patient">Patient</option>
+                        <option value="doctor">Doctor</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-primary">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Login to Your Account</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" name="login-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" name="login-password" required>
+                </div>
+                <div class="form-group remember-forgot">
+                    <div>
+                        <input type="checkbox" id="remember-me" name="remember-me">
+                        <label for="remember-me">Remember me</label>
+                    </div>
+                    <a href="#" class="forgot-password">Forgot password?</a>
+                </div>
+                <button type="submit" class="btn-primary">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Success Message -->
+    <div class="success-message" id="successMessage">
+        <p>Your request has been submitted successfully!</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
